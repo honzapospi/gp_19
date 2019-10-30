@@ -4,6 +4,7 @@ const dbquery = require("./fake_db")
 console.time("1")
 console.time("2")
 
+
 dbquery("select 1", (err, result1) => {
     console.timeEnd("1")
     if (result1) {
